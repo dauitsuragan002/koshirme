@@ -51,7 +51,8 @@ async def download_handler(message: types.Message):
     service_keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
             [InlineKeyboardButton(text='YouTube', callback_data='youtube')],
-            [InlineKeyboardButton(text="TikTok", url="https://t.me/tiktok667_bot?start=start")],
+            [InlineKeyboardButton(text="TikTok", callback_data='tiktok')],
+            [InlineKeyboardButton(text='Instagram', callback_data='instagram')],
             [InlineKeyboardButton(text='Вконтакте', callback_data='вконтакте')]
         ]
     )
